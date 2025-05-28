@@ -230,75 +230,81 @@ body {
 }
 /* ...existing code... */
 
-/* Responsive untuk layar kecil (HP) */
 @media (max-width: 600px) {
-    .topbar {
-        font-size: 1em;
-        padding: 10px;
-        text-align: center;
-    }
     .logo-bar {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        padding: 10px 10px;
     }
     .logo-bar img {
-        width: 80px;
+        width: 70px;
         height: auto;
     }
-    .project-title {
-        font-size: 1.3em;
+    .logo-bar .project-title {
+        font-size: 1.1em;
         text-align: center;
+    }
+    .menu-bar {
+        padding: 10px 0;
+        justify-content: center;
     }
     .menu-bar ul {
         flex-direction: column;
-        gap: 0;
-        padding: 0;
+        align-items: center;
+        width: 100%;
     }
     .menu-bar li {
         margin: 0;
+        width: 100%;
         border-bottom: 1px solid #eee;
+        text-align: center;
+        padding: 8px 0;
+    }
+    .menu-bar a {
+        font-size: 1.1em;
+        display: block;
+        width: 100%;
+        padding: 8px 0;
     }
     .content {
-        padding: 10px;
+        padding: 10px 4px;
     }
     .hero {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 20px 6px;
     }
     .hero-img img {
         width: 100%;
-        max-width: 250px;
+        max-width: 180px;
+        height: auto;
         margin: 0 auto;
+    }
+    .hero-title {
+        font-size: 1.4em !important;
+    }
+    .hero-desc {
+        font-size: 1em !important;
     }
     .fish-list, .team-list {
         flex-direction: column;
-        gap: 16px;
+        gap: 12px;
     }
     .team-card {
         width: 100%;
         max-width: 320px;
         margin: 0 auto;
     }
+    .section {
+        padding: 16px 6px;
+    }
     .section-title {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
     ul {
         padding-left: 18px;
-    }
-}
-
-/* Responsive untuk layar sedang (tablet) */
-@media (max-width: 900px) {
-    .hero-title {
-        font-size: 2em !important;
-    }
-    .hero-desc {
-        font-size: 1em !important;
-    }
-    .team-list {
-        gap: 18px;
     }
 }
 
