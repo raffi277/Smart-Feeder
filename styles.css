@@ -307,5 +307,58 @@ body {
         padding-left: 18px;
     }
 }
+/* Hamburger icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1001;
+}
+.hamburger span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    margin: 4px 0;
+    background: #222;
+    border-radius: 2px;
+    transition: 0.3s;
+}
 
+/* Responsive hamburger */
+@media (max-width: 600px) {
+    .hamburger {
+        display: flex;
+        background: #fff;
+        border-radius: 8px;
+        margin-left: 8px;
+    }
+    .menu-bar nav {
+        display: none;
+        width: 100%;
+    }
+    .menu-bar nav.active {
+        display: block;
+        background: #2176ae;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+    }
+    .menu-bar ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .menu-bar li {
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+        padding: 12px 0;
+    }
+}
 /* ...existing code... */
