@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Pemberian Pakan Ikan</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topbar">
+        Website Informasi Pemberian Pakan Ikan - Praktis & Edukatif
+    </div>
+    <div class="logo-bar">
+        <div class="project-title">SMART FISH FEEDER</div>
+        <img src="LOGO NEW.png" alt="Logo Ikan">
+    </div>
+    <div class="menu-bar">
+        <nav>
+            <ul>
+                <li><a href="#home" class="active" onclick="showSection('home')">Home</a></li>
+                <li><a href="#menu-ikan" onclick="showSection('menu-ikan')">Menu Ikan</a></li>
+                <li><a href="#dapatkan-aplikasi" onclick="showSection('dapatkan-aplikasi')">Dapatkan Aplikasi</a></li>
+                <li><a href="#tentang-pembuat" onclick="showSection('tentang-pembuat')">Tentang Pembuat</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div id="home" class="section">
+            <div class="hero">
+                <div class="hero-text">
+                    <div class="hero-title" style="font-size:3em;font-weight:700;">Selamat Datang di Smart Fish Feeder</div>
+                    <div class="hero-desc" style="font-size:2ch;line-height:1.2;margin:24px 0 32px 0;">sebuah inovasi teknologi di bidang akuakultur yang bertujuan untuk mempermudah dan mengoptimalkan proses pemberian pakan ikan sekaligus menyediakan fitur pemantauan visual terhadap kondisi kolam secara langsung. Sistem ini mengintegrasikan konsep Internet of Things (IoT) dengan perangkat keras dan perangkat lunak yang saling terhubung, sehingga memungkinkan pengendalian dan pengawasan dilakukan secara jarak jauh menggunakan koneksi internet.</div>
+                    <div class="hero-buttons">
+                        <button class="active" onclick="showSection('menu-ikan')">Menu Ikan</button>
+                    </div>
+                </div>
+                <div class="hero-img">
+                    <img src="video ikan.jpg" alt="Ikan Hias">
+                </div>
+            </div>
+        </div>
+        <div id="menu-ikan" class="section" style="display:none;">
+            <div class="section-title">Pilihan Ikan & Penjelasan</div>
+            <div class="fish-list" id="fishList">
+                <!-- Fish cards will be rendered here -->
+            </div>
+        </div>
+        <div id="tentang-pembuat" class="section" style="display:none;">
+            <div class="section-title" style="text-align:center;font-size:2em;">Team Introduction</div>
+            <div class="team-list" style="display:flex;flex-wrap:wrap;gap:32px;justify-content:center;">
+                <div class="team-card">
+                    <div class="team-photo"><img src="rafi.png" alt="Foto 1"></div>
+                    <div class="team-name">Muhammad Rafi</div>
+                    <div class="team-role">NIM : 3232401007</div>
+                    
+                </div>
+                <div class="team-card">
+                    <div class="team-photo"><img src="Putri.png" alt="Foto 2"></div>
+                    <div class="team-name">Putri Senanti Napitupulu</div>
+                    <div class="team-role">NIM : 3232401019</div>
+                    
+                </div>
+                <div class="team-card">
+                    <div class="team-photo"><img src="halim.png"Foto 3"></div>
+                    <div class="team-name">Halim Faisal Hidayat</div>
+                    <div class="team-role">NIM : 3232301051</div>
+                    
+                </div>
+                <div class="team-card">
+                    <div class="team-photo"><img src="adit.png" alt="Foto 4"></div>
+                    <div class="team-name">Aditya Putra</div>
+                    <div class="team-role">NIM : 3232311051</div>
+                    
+                </div>
+                <div class="team-card">
+                    <div class="team-photo"><img src="arafah.png" alt="Foto 5"></div>
+                    <div class="team-name">Jovan Lee</div>
+                    <div class="team-role">QA & Tester</div>
+                    <div class="team-desc">Menjamin aplikasi berjalan baik dan bebas bug.</div>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo"><img src="https://randomuser.me/api/portraits/women/46.jpg" alt="Foto 6"></div>
+                    <div class="team-name">Vania Dea</div>
+                    <div class="team-role">Content Writer</div>
+                    <div class="team-desc">Membuat konten edukasi dan dokumentasi aplikasi.</div>
+                </div>
+            </div>
+        </div>
+        <div id="dapatkan-aplikasi" class="section" style="display:none;">
+            <div class="section-title">Dapatkan Aplikasi</div>
+            <div style="margin-bottom:18px;">
+                <a href="https://drive.google.com/your-app-link" target="_blank" style="background:#2176ae;color:#fff;padding:18px 28px;border-radius:16px;text-decoration:none;font-weight:700;font-size:1.5em;display:block;text-align:center;max-width:600px;margin:0 auto;">Download Aplikasi di Google Drive</a>
+            </div>
+            <div class="section-title" style="margin-top:32px;text-align:center;">Fitur Smart Fish Feeder</div>
+            <ul style="font-size:1.2em;line-height:1.7;max-width:700px;margin:0 auto;">
+                <li style="margin-bottom:18px;"><b>Pemberian Pakan Otomatis dan Terjadwal</b><br>
+                    <span style="font-weight:400;">Sistem dapat diatur untuk memberi makan ikan pada waktu-waktu tertentu secara otomatis.</span>
+                </li>
+                <li style="margin-bottom:18px;"><b>Visual Monitoring (Live Camera Streaming)</b><br>
+                    <span style="font-weight:400;">Pengguna dapat melihat kondisi kolam ikan secara langsung dari browser/web interface.</span>
+                </li>
+                <li style="margin-bottom:18px;"><b>Pengaturan Jarak Jauh</b><br>
+                    <span style="font-weight:400;">Melalui jaringan Wi-Fi dan koneksi internet, pengguna dapat mengontrol sistem dari mana saja menggunakan smartphone atau laptop.</span>
+                </li>
+                <li style="margin-bottom:18px;"><b>Penyesuaian Berdasarkan Jenis Ikan</b><br>
+                    <span style="font-weight:400;">Pengguna dapat memilih jenis ikan, dan sistem akan menyesuaikan takaran pakan secara otomatis berdasarkan preset yang ditentukan.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="data.js"></script>
+</body>
+</html>

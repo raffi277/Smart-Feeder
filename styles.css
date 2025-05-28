@@ -1,0 +1,230 @@
+/* ...CSS dipindahkan dari index.html... */
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #18344a;
+    color: #fff;
+}
+.topbar {
+    background: #2176ae;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.1em;
+}
+.logo-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 40px;
+}
+.logo-bar img {
+    height: 50px;
+}
+.logo-bar .project-title {
+    color: #2176ae;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.menu-bar {
+    background: #2176ae;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+.menu-bar nav {
+    flex: 1;
+}
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu-bar li {
+    margin: 0 30px;
+}
+.menu-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.menu-bar a:hover, .menu-bar a.active {
+    color: #ff7f50;
+}
+.content {
+    padding: 40px 20px 20px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(24,52,74,0.95);
+    border-radius: 16px;
+    padding: 40px 30px;
+    margin-bottom: 30px;
+}
+.hero-text {
+    flex: 2;
+}
+.hero-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.hero-desc {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.hero-buttons button {
+    background: none;
+    border: 2px solid #ff7f50;
+    color: #ff7f50;
+    padding: 12px 28px;
+    font-size: 1em;
+    border-radius: 8px;
+    margin-right: 16px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.hero-buttons button.active, .hero-buttons button:hover {
+    background: #ff7f50;
+    color: #fff;
+}
+.hero-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.hero-img img {
+    height: 180px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+.section {
+    background: #204060;
+    border-radius: 12px;
+    padding: 30px 24px;
+    margin-bottom: 24px;
+}
+.section-title {
+    font-size: 1.5em;
+    color: #ff7f50;
+    margin-bottom: 16px;
+}
+.fish-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.fish-card {
+    background: #29527a;
+    border-radius: 10px;
+    padding: 18px 16px;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.fish-card h4 {
+    margin: 0 0 8px 0;
+    color: #ff7f50;
+}
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #29527a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.schedule-table th, .schedule-table td {
+    padding: 12px 10px;
+    text-align: left;
+}
+.schedule-table th {
+    background: #2176ae;
+    color: #fff;
+}
+.schedule-table tr:nth-child(even) {
+    background: #24496b;
+}
+.creator-section {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.creator-photo {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.creator-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.creator-info {
+    flex: 1;
+}
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+.team-card {
+    background: #29527a;
+    border-radius: 16px;
+    padding: 28px 24px 18px 24px;
+    width: 260px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.team-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    margin-bottom: 18px;
+}
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.team-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff7f50;
+    margin-bottom: 6px;
+}
+.team-role {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.team-desc {
+    font-size: 0.98em;
+    color: #fff;
+    margin-bottom: 0;
+}
+@media (max-width: 800px) {
+    .hero { flex-direction: column; text-align: center; }
+    .hero-img { justify-content: center; margin-top: 20px; }
+    .creator-section { flex-direction: column; text-align: center; }
+}
+@media (max-width: 900px) {
+    .team-list { flex-direction: column; align-items: center; }
+}
