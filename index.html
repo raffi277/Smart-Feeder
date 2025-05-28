@@ -16,6 +16,12 @@
         <img src="LOGO NEW.png" alt="Logo Ikan">
     </div>
     <div class="menu-bar">
+        <!-- Tambahkan di index.html, di dalam .menu-bar -->
+<div class="hamburger" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
         <nav>
             <ul>
                 <li><a href="#home" class="active" onclick="showSection('home')">Home</a></li>
@@ -111,5 +117,11 @@
         </div>
     </div>
     <script src="data.js"></script>
+    <script>
+function toggleMenu() {
+    var nav = document.querySelector('.menu-bar nav');
+    nav.classList.toggle('active');
+}
+</script>
 </body>
 </html>
