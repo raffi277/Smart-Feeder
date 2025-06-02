@@ -25,7 +25,7 @@
         <nav>
             <ul>
                 <li><a href="#home" class="active" onclick="showSection('home')">Home</a></li>
-                <li><a href="#menu-ikan" onclick="showSection('menu-ikan')">Menu Ikan</a></li>
+                <li><a href="#video-live" onclick="showSection('video-live')">Video Live</a></li>
                 <li><a href="#dapatkan-aplikasi" onclick="showSection('dapatkan-aplikasi')">Dapatkan Aplikasi</a></li>
                 <li><a href="#tentang-pembuat" onclick="showSection('tentang-pembuat')">Tentang Pembuat</a></li>
                 
@@ -39,7 +39,7 @@
                     <div class="hero-title" style="font-size:3em;font-weight:700;">Selamat Datang di Smart Fish Feeder</div>
                     <div class="hero-desc" style="font-size:2ch;line-height:1.2;margin:24px 0 32px 0;">sebuah inovasi teknologi di bidang akuakultur yang bertujuan untuk mempermudah dan mengoptimalkan proses pemberian pakan ikan sekaligus menyediakan fitur pemantauan visual terhadap kondisi kolam secara langsung. Sistem ini mengintegrasikan konsep Internet of Things (IoT) dengan perangkat keras dan perangkat lunak yang saling terhubung, sehingga memungkinkan pengendalian dan pengawasan dilakukan secara jarak jauh menggunakan koneksi internet.</div>
                     <div class="hero-buttons">
-                        <button class="active" onclick="showSection('menu-ikan')">Menu Ikan</button>
+                        <button class="active" onclick="showSection('video-live')">Video Live</button>
                     </div>
                 </div>
                 <div class="hero-img">
@@ -47,10 +47,11 @@
                 </div>
             </div>
         </div>
-        <div id="menu-ikan" class="section" style="display:none;">
-            <div class="section-title">Pilihan Ikan & Penjelasan</div>
-            <div class="fish-list" id="fishList">
-                <!-- Fish cards will be rendered here -->
+        <div id="video-live" class="section" style="display:none;">
+            <div class="section-title">Live Video Kolam Ikan</div>
+            <div style="text-align:center;">
+                <!-- Ganti link src berikut dengan link live streaming kamu jika ada -->
+                <iframe width="100%" height="315" src="http://192.168.63.243/stream" title="Live Video" frameborder="0" allowfullscreen style="max-width:600px;"></iframe>
             </div>
         </div>
         <div id="tentang-pembuat" class="section" style="display:none;">
